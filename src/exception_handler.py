@@ -1,7 +1,7 @@
 '''This file contains the exception handler to handle the exceptions raised in the project'''
 import sys
 import logging
-
+from src.logger import logging
 def get_error_details(error, error_details:sys):
     _,_, exc_tb = error_details.exc_info() # get the traceback object
     file_name = exc_tb.tb_frame.f_code.co_filename # get the file name
